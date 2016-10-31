@@ -1,3 +1,10 @@
+/*
+OOPDT249216a
+Name: Phillip Hourigan
+Student Number: D15124474
+*/
+
+
 /*imports Scanner library for user inputs*/
 import java.util.Scanner;
 
@@ -15,7 +22,7 @@ public class Person{
 		/**
 		 * Person take in one argument 'name' it's value is initialized to the class field
 		 * Default value of class field 'age' is initialized as 0
-		 * @param 'name' type String, class variable 
+		 * @param 'name' type String, class field 
 		 * @return None
 		 */
 		this.name = name;
@@ -26,6 +33,7 @@ public class Person{
 	public static void observer(){
 		/**
 		 * observer does nothing at the moment
+		 * the test_age method is used as an observer class as it return a string
 		 * @param None
 		 * @return None
 		 */
@@ -38,13 +46,13 @@ public class Person{
 	     * will print to screen the details of each person
 	     * will print the return string from the test_age method
 		 * @param 'name1' type String, is the name value of the first person
-		 * @param 'name2' type String, is the name value of the second person
-		 * @param 'age1' type int, is the are value of the first person
-		 * @param 'age2' type int, is the age value of the second person
+		 * @param 'age1' type int, is the are value of the first person age
+		 * @param 'name2' type String, is the name value of the second person 
+		 * @param 'age2' type int, is the age value of the second person age
 		 * @return None
 		 */
 		System.out.printf("The name of person 1 is %s they are %d years of age\n",name1, age1);
-		System.out.printf("The name of person 1 is %s they are %d years of age\n",name2, age2);
+		System.out.printf("The name of person 2 is %s they are %d years of age\n",name2, age2);
 		System.out.println(test_age(name1, age1, name2, age2));
 		
 	}// end diplay
@@ -69,9 +77,9 @@ public class Person{
 		/**
 		 * test_age will test to see who is oldest of two persons
 		 * @param 'name1' type String, used in prompts 
-		 * @param 'age1' type int, tested in the condictions statements
+		 * @param 'age1' type int, tested in the condictional statements
 		 * @param 'name2' type String, used in prompts
-		 * @param 'age2' type int, tested in the condictions statements
+		 * @param 'age2' type int, tested in the condictional statements
 		 * @return type String, will depend on the outcome of the condictional statement
 		 */
 		if(age1 > age2){
@@ -96,7 +104,7 @@ public class Person{
 		 */
 		
 		Person person1 = new Person("Bob"); // instantiates person1 with the name 'Bob'
-		Person person2 = new Person("Sam"); // instantiates person1 with the name 'Sam'
+		Person person2 = new Person("Sam"); // instantiates person2 with the name 'Sam'
 		set_age(person1); // passes person1 to set_age
 		set_age(person2); // passes person2 to set_age
 		display(person1.name, person1.age, person2.name, person2.age); // passes person values to display information about them
